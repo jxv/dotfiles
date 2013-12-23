@@ -1,4 +1,8 @@
 #set the cursor
 xsetroot -cursor_name left_ptr
+
+# 
+xrdb -all ~/.Xresources
+
 # start xmonad
 exec xmonad
