@@ -1,0 +1,16 @@
+Config { font = "xft:Terminus-10"
+       , borderColor = "#000000"
+       , bgColor = "#303030"
+       , fgColor = "#dddddd"
+       , border = BottomB
+       , position = Top
+       , commands = [ Run StdinReader
+                    , Run Date "%a %b %_d %Y" "date" 360
+                    , Run Date "%H:%M:%S" "time" 10
+                    , Run Battery ["-t", "<timeleft>"] 10
+                    , Run ThermalZone 0 ["-t", "<temp>°"] 30
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = " %StdinReader%}{| %date% | %time% | %battery% | %thermal0% "
+       }
