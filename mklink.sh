@@ -2,23 +2,26 @@
 
 ENV=$(pwd)
 
+# fontconfig
+mkdir -p ~/.config
+ln -sf $ENV/fontconfig ~/.config/fontconfig
+
 # ghci
-ln -s $ENV/ghc/ghci ~/.ghci
+ln -sf $ENV/ghc/ghci ~/.ghci
 
 # vim
-ln -s $ENV/vim/vimrc ~/.vimrc
+ln -sf $ENV/vim/vimrc ~/.vimrc
 
 # x11
-ln -s $ENV/x11/xinitrc ~/.xinitrc
-ln -s $ENV/x11/Xresources ~/.Xresources
+ln -sf $ENV/x11/xinitrc ~/.xinitrc
+ln -sf $ENV/x11/Xresources ~/.Xresources
 
 # xmonad
-ln -s $ENV/xmonad/ ~/.xmonad/
-rm $ENV/xmonad/xmonad	# rm created folder, when a folder already exists
+ln -sf $ENV/xmonad/ ~/.xmonad/
 
 # xmobar
-ln -s $ENV/xmobar/xmobarrc ~/.xmobarrc
+ln -sf $ENV/xmobar/xmobarrc ~/.xmobarrc
 
 # zsh
-ln -s $ENV/zsh/zshrc ~/.zshrc
-ln -s $ENV/zsh/zprofile ~/.zprofile
+ln -sf $ENV/zsh/zshrc ~/.zshrc
+ln -sf $ENV/zsh/zprofile ~/.zprofile
