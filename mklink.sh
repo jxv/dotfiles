@@ -9,6 +9,9 @@ ln -sf $ENV/fontconfig ~/.config/fontconfig
 # ghci
 ln -sf $ENV/ghc/ghci ~/.ghci
 
+# irssi
+ln -sf $ENV/irssi ~/.irssi
+
 # vim
 ln -sf $ENV/vim/vimrc ~/.vimrc
 
