@@ -1,4 +1,7 @@
 PATH=$PATH:~/.bin
 PATH=$PATH:~/.cabal/bin
+PATH=$PATH:/opt/braid
 
 [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+
+source ~/.bin/killproc.sh
