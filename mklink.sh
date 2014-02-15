@@ -19,6 +19,8 @@ ln -sf $ENV/irssi ~/.irssi
 rm -rf $ENV/irssi/irssi
 
 # vim
+ln -sf $ENV/vim ~/.vim
+rm -rf $ENV/vim/vim
 ln -sf $ENV/vim/vimrc ~/.vimrc
 
 # x11
