@@ -1,4 +1,3 @@
--- Imports.
 import XMonad
 import XMonad.Hooks.DynamicLog
 
