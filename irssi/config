@@ -261,3 +261,4 @@ settings = {
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = { theme = "zhafte.theme"; };
 };
+ignores = ( );

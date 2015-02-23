@@ -1,17 +1,26 @@
 import XMonad
+import XMonad.Layout.LayoutModifier
+import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.DynamicLog
 
--- The main function.
-main = xmonad =<< statusBar myBar myPP toggleStrutsKey myConfig
+main :: IO ()
+main = do
+    config <- statusBar bar pp toggleStrutsKey myConfig
+    xmonad config
 
--- Command to launch the bar.
-myBar = "xmobar"
+bar :: String
+bar = "xmobar"
 
--- Custom PP, configure it as you like. It determines what is being written to the bar.
-myPP = xmobarPP { ppCurrent = xmobarColor "yellow" "" . wrap "[" "]" }
+pp :: PP
+pp = xmobarPP
+    { ppCurrent = xmobarColor "yellow" "" . wrap "[" "]"
+    }
 
--- Key binding to toggle the gap for the bar.
-toggleStrutsKey XConfig {XMonad.modMask = modMask} = (modMask, xK_b)
+toggleStrutsKey :: XConfig t -> (KeyMask, KeySym)
+toggleStrutsKey XConfig{ XMonad.modMask = modMask} = (modMask, xK_b )
 
--- Main configuration, override the defaults to your liking.
-myConfig = defaultConfig { modMask = mod4Mask, focusedBorderColor = "yellow" }
+myConfig = defaultConfig
+    { focusedBorderColor = "yellow"
+    , terminal = "urxvt"
+    , modMask = mod1Mask -- Alt L
+    } 

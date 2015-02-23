@@ -4,5 +4,12 @@ xsetroot -cursor_name left_ptr
 # 
 xrdb -all ~/.Xresources
 
+if [ ! -x xloadimage ]; then
+	xloadimage -onroot -fullscreen ~/pic/bg
+fi
+
 # start xmonad
 exec xmonad
+
+
+

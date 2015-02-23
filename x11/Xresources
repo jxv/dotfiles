@@ -14,7 +14,9 @@ Xft.rgba:               rgb
 
 URxvt.cursorBlink:      true
 URxvt.depth:            24
-URxvt.font:             xft:Terminus:pixelsize=8
+! URxvt.font:             xft:Terminus:pixelsize=6
+URxvt.font:             xft:Anonymous Pro:pixelsize=11
+URxvt.letterSpace:      1
 URxvt.inheritPixmap:    true
 URxvt.internalBorder:   4
 URxvt.loginShell:       true
@@ -25,10 +27,9 @@ URxvt.termName:         xterm-256color
 URxvt.transparent:      true
 URxvt.urgentOnBell:     true
 
-! Appearance
-
+! Appearance 
 URxvt.foreground:       #D7D0C7
-URxvt.background:       #000000
+URxvt.background:       #202020
 ! Black
 URxvt.color0:           #303030
 URxvt.color8:           #404040

@@ -14,7 +14,7 @@ SAVEHIST=1000
 #------------------------------
 # Variables
 #------------------------------
-export BROWSER="dwb"
+export BROWSER="firefox"
 export EDITOR="vim"
 export PSPDEV="/usr/local/pspdev/"
 #export PAGER="vimpager"

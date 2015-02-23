@@ -1,4 +1,4 @@
 :set prompt "λ> "
-:set -XOverloadedStrings
-:set -Wall
+-- :set -XOverloadedStrings
+-- :set -Wall
 :set -fno-warn-name-shadowing

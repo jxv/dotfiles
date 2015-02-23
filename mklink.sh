@@ -26,6 +26,7 @@ ln -sf $ENV/vim/vimrc ~/.vimrc
 # x11
 ln -sf $ENV/x11/xinitrc ~/.xinitrc
 ln -sf $ENV/x11/Xresources ~/.Xresources
+ln -sf $ENV/x11/Xdefaults ~/.Xdefaults
 
 # xmonad
 ln -sf $ENV/xmonad/ ~/.xmonad/

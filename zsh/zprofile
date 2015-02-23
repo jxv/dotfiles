@@ -1,8 +1,21 @@
+export set LD_LIBRARY_PATH=/usr/local/lib
+#export set SDL_VIDEODRIVER=wayland
+#export set SDL_VIDEODRIVER=x11
+#export set GDK_BACKEND=wayland
+#export set QT_QPA_PLATFORM=wayland-egl
+
 PATH=$PATH:~/.bin
 PATH=$PATH:~/.cabal/bin
+PATH=$PATH:/opt/gcw-toolchain/usr/bin
 PATH=$PATH:/opt/braid
+PATH=$PATH:$LD_LIBRARY_PATH
 
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+alias irssi="TERM=screen-256color irssi"
+alias dmenu_run="LANG=en_US.UTF-8 dmenu_run"
+alias dmenu="LANG=en_US.UTF-8 dmenu"
+alias rustc-gcw0="rustc --target=mipsel-unknown-linux-gnu -C linker=mipsel-unknown-linux-gnu-cc"
+
+#[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec weston
 
 source ~/.bin/killproc.sh
 source ~/.bin/d.sh
