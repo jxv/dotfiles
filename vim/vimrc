@@ -3,7 +3,7 @@
 :syntax on
 
 :autocmd FileType c set expandtab|set cc=81
-:autocmd FileType cpp set set expandtab|set cc=81
+:autocmd FileType cpp set expandtab|set cc=121
 :autocmd FileType rust set tabstop=4|set shiftwidth=4|set expandtab|set cc=121
 :autocmd FileType haskell set tabstop=4|set shiftwidth=4|set expandtab|set cc=121
 :autocmd FileType scheme set tabstop=4|set shiftwidth=4|set expandtab|set cc=81
