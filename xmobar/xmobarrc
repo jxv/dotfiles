@@ -1,4 +1,4 @@
-Config { font = "xft:Terminus10"
+Config { font = "xft:Anonymous Pro:pixelsize=11"
        , borderColor = "#000000"
        , bgColor = "#303030"
        , fgColor = "#dddddd"
