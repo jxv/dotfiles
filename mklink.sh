@@ -19,6 +19,10 @@ ln -sf $ENV/irssi ~/.irssi
 rm -rf $ENV/irssi/irssi
 
 # vim
+rm -rf ~/.tmux.conf
+ln -sf $ENV/tmux/tmux.conf ~/.tmux.conf
+
+# vim
 ln -sf $ENV/vim ~/.vim
 rm -rf $ENV/vim/vim
 ln -sf $ENV/vim/vimrc ~/.vimrc
