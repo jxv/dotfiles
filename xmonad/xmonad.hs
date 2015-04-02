@@ -13,14 +13,15 @@ bar = "xmobar"
 
 pp :: PP
 pp = xmobarPP
-    { ppCurrent = xmobarColor "yellow" "" . wrap "[" "]"
+    { ppCurrent = xmobarColor "red" "" . wrap "[" "]"
     }
 
 toggleStrutsKey :: XConfig t -> (KeyMask, KeySym)
 toggleStrutsKey XConfig{ XMonad.modMask = modMask} = (modMask, xK_b )
 
 myConfig = defaultConfig
-    { focusedBorderColor = "yellow"
+    { focusedBorderColor = "red"
+--modMask,               xK_p     ), spawn "dmenu_run") -- %! Launch dmen
     , terminal = "urxvt"
     , modMask = mod1Mask -- Alt L
     } 

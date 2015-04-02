@@ -4,8 +4,13 @@ xsetroot -cursor_name left_ptr
 # 
 xrdb -all ~/.Xresources
 
-if [ ! -x xloadimage ]; then
-	xloadimage -onroot -fullscreen ~/pic/bg
+if [ ! -x xscreensaver ]; then
+	# xloadimage -onroot -center ~/pic/bg
+	# /usr/lib/xscreensaver/gleidescope -root -no-move -no-rotate -size 2 -duration 30 &
+	# /usr/lib/xscreensaver/xrayswarm -root -delay 20000 &
+	/usr/lib/xscreensaver/glslideshow -root -zoom 95  -duration 5 &
+	# /usr/lib/xscreensaver/lockward -root &
+	
 fi
 
 # start xmonad

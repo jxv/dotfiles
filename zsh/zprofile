@@ -16,6 +16,7 @@ alias dmenu="LANG=en_US.UTF-8 dmenu"
 alias rustc-gcw0="rustc --target=mipsel-unknown-linux-gnu -C linker=mipsel-unknown-linux-gnu-cc"
 
 #[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec weston
+[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
 
 source ~/.bin/killproc.sh
 source ~/.bin/d.sh

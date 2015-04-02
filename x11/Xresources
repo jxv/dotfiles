@@ -13,7 +13,7 @@ Xft.rgba:               rgb
 ! URxvt 
 
 URxvt.cursorBlink:      true
-URxvt.depth:            24
+URxvt.depth:            32
 URxvt.font:             xft:Anonymous Pro:pixelsize=11
 URxvt.letterSpace:      1
 
@@ -25,14 +25,15 @@ URxvt.pointerBlank:     true
 URxvt.resource:         value
 URxvt.termName:         xterm-256color
 URxvt.transparent:      true
+! URxvt.shading:          110
 URxvt.urgentOnBell:     true
 
 ! Appearance 
 URxvt.foreground:       #D7D0C7
-URxvt.background:       #202020
+URxvt.background:       #303030
 ! Black
-URxvt.color0:           #303030
-URxvt.color8:           #404040
+URxvt.color0:           #505050
+URxvt.color8:           #606060
 ! Red
 URxvt.color1:           #E84F4F
 URxvt.color9:           #D23D3D
@@ -52,8 +53,8 @@ URxvt.color13:          #8542FF
 URxvt.color6:           #6D878D
 URxvt.color14:          #42717B
 ! White
-URxvt.color7:           #dddddd
-URxvt.color15:          #dddddd
+URxvt.color7:           #ffffff
+URxvt.color15:          #ffffff
 
 ! Scrolling 
 
@@ -73,4 +74,4 @@ URxvt.perl-ext:             default,matcher
 URxvt.cutchars:             `"()'*<>[]{|}"
 URxvt.matcher.pattern.1:    \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
 URxvt.matcher.button:       1
-URxvt.urlLauncher:          dwb
+URxvt.urlLauncher:          firefox

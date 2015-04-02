@@ -1,7 +1,7 @@
 Config { font = "xft:Anonymous Pro:pixelsize=11"
-       , borderColor = "#000000"
-       , bgColor = "#303030"
-       , fgColor = "#dddddd"
+       , borderColor = "#aaaaaa"
+       , bgColor = "#ffffff"
+       , fgColor = "#111111"
        , border = BottomB
        , position = Top
        , allDesktops = True
