@@ -14,7 +14,7 @@ Xft.rgba:               rgb
 
 URxvt.cursorBlink:      true
 URxvt.depth:            32
-URxvt.font:             xft:Anonymous Pro:pixelsize=11
+URxvt.font:             xft:Anonymous Pro:pixelsize=10
 URxvt.letterSpace:      1
 
 URxvt.inheritPixmap:    true

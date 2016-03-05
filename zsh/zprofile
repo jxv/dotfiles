@@ -4,11 +4,19 @@ export set LD_LIBRARY_PATH=/usr/local/lib
 #export set GDK_BACKEND=wayland
 #export set QT_QPA_PLATFORM=wayland-egl
 
+GOPATH=$HOME/sfw/go
+export GOPATH
+
 PATH=$PATH:~/.bin
 PATH=$PATH:~/.cabal/bin
-PATH=$PATH:/opt/gcw-toolchain/usr/bin
+PATH=$PATH:~/.gem/ruby/2.2.0/bin
+PATH=$PATH:~/go/bin
+PATH=$PATH:/opt/gcw0-toolchain/usr/bin
 PATH=$PATH:/opt/braid
 PATH=$PATH:$LD_LIBRARY_PATH
+
+CMAKE_ROOT=/usr/share/cmake-3.3
+export CMAKE_ROOT
 
 alias irssi="TERM=screen-256color irssi"
 alias dmenu_run="LANG=en_US.UTF-8 dmenu_run"

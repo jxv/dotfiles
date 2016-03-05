@@ -4,17 +4,21 @@ xsetroot -cursor_name left_ptr
 # 
 xrdb -all ~/.Xresources
 
+# left handed mouse buttons
+# xmodmap -e 'pointer = 3 2 1'
+
 if [ ! -x xscreensaver ]; then
-	# xloadimage -onroot -center ~/pic/bg
-	# /usr/lib/xscreensaver/gleidescope -root -no-move -no-rotate -size 2 -duration 30 &
-	# /usr/lib/xscreensaver/xrayswarm -root -delay 20000 &
-	/usr/lib/xscreensaver/glslideshow -root -zoom 95  -duration 5 &
-	# /usr/lib/xscreensaver/lockward -root &
-	
+#	xloadimage -onroot -center ~/pic/bg
+#	/usr/lib/xscreensaver/gleidescope -root -no-move -no-rotate -size 2 -duration 30 &
+#	/usr/lib/xscreensaver/xrayswarm -root -delay 20000 &
+#	/usr/lib/xscreensaver/glslideshow -root -zoom 95  -duration 5 &
+	/usr/lib/xscreensaver/lockward -root &	
 fi
 
-# start xmonad
+SHELL=/bin/zsh
+#~/.bin/monitor.sh
+
 exec xmonad
 #exec dwm
-
-
+#exec gnome-session
+#exec env GNOME_SHELL_SESSION_MODE=classic gnome-session --session gnome-classic

@@ -20,6 +20,7 @@ export PSPDEV="/usr/local/pspdev/"
 #export PAGER="vimpager"
 export PATH="${PATH}:${HOME}/bin:${HOME}/.cabal/bin"
 export PATH="${PATH}:${PSPDEV}/bin"
+export PATH="${PATH}:${HOME}/.local/bin"
 export TERM="rxvt-unicode"
 
 #-----------------------------
@@ -64,6 +65,7 @@ alias spm="sudo pacman"
 alias spmc="sudo pacman-color"
 alias gr="gvim --remote-silent"
 alias vr="vim --remote-silent"
+alias em="emacs -nw"
 
 #------------------------------
 # ShellFuncs

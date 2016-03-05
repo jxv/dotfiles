@@ -2,10 +2,10 @@
 :set nolist
 :syntax on
 
-:autocmd FileType c set tabstop=8|set shiftwidth=8|set expandtab|set cc=121|set autoindent
+:autocmd FileType c set tabstop=2|set shiftwidth=2|set expandtab|set cc=121|set autoindent
 :autocmd FileType cpp set tabstop=4|set shiftwidth=4|set expandtab|set cc=121
 :autocmd FileType rust set tabstop=4|set shiftwidth=4|set expandtab|set cc=121
-:autocmd FileType haskell set tabstop=4|set shiftwidth=2|set expandtab|set cc=100
+:autocmd FileType haskell set tabstop=2|set shiftwidth=2|set expandtab|set cc=100
 :autocmd FileType hsc set tabstop=4|set shiftwidth=4|set expandtab|set cc=121
 :autocmd FileType scheme set tabstop=4|set shiftwidth=4|set expandtab|set cc=121
 :autocmd FileType python set tabstop=2|set shiftwidth=2|set expandtab

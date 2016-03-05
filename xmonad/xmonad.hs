@@ -23,5 +23,5 @@ myConfig = defaultConfig
     { focusedBorderColor = "red"
 --modMask,               xK_p     ), spawn "dmenu_run") -- %! Launch dmen
     , terminal = "urxvt"
-    , modMask = mod1Mask -- Alt L
+    , modMask = mod4Mask -- Alt L
     } 

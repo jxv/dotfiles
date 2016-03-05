@@ -1,5 +1,6 @@
-:set prompt "λ> "
--- :set -XOverloadedStrings
+:set prompt "λ . "
+:set -XOverloadedStrings
+:set -XScopedTypeVariables
 -- :set -Wall
 :set -fno-warn-name-shadowing
 :def hoogle \s -> return $ ":! hoogle --count=15 \"" ++ s ++ "\""
